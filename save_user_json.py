@@ -28,7 +28,7 @@ def save_users_json():
             users = get_json_friends_by_id(friend["id"])
             for user in users["response"]["items"]:
                 writing_users_to_file(user)
-            sleep(.5)
+            sleep(0.5)
         counter += 1
         print(
             f"{counter}/{total_friends}: {friend['first_name']} {friend['last_name']}"

@@ -1,6 +1,5 @@
 import json
 import os
-from os.path import exists
 
 from json_friends import check_exists_file_and_deleted
 from secret import MY_ID

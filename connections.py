@@ -22,7 +22,7 @@ def func():
                 users = get_json_friends_by_id(friend["id"])
                 for user in users["response"]["items"]:
                     connections.write(f"{friend['id']}, {user['id']}\n")
-                sleep(.5)
+                sleep(0.5)
             counter += 1
             print(
                 f"{counter}/{total_friends}: {friend['first_name']} {friend['last_name']}"
